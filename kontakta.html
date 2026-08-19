@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Knit Retreat - Kontakta</title>
+        <meta name="description" content="Kontakta oss vid frågor om våra aktiviter och för att boka ett tillfälle.">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="header-container">
+                <img src="Gallery/logo.webp" alt="Hotel Knit Retreat Logo" class="logo">
+            <div class="title-container">
+                <h1 class="title">Hotel Knit Retreat</h1>
+                <h2 class="title-2"><i>i Eskilstuna</i></h2>
+            </div>
+        </header>
+       <nav>
+            <ul class="hamburger">
+                <li onclick=hidehamburger()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#f9f9f9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="boka.html">Boka</a></li>
+                <li><a href="hitta.html">Hitta</a></li>
+                <li><a href="kontakta.html">Kontakta</a></li>
+                
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Hem</a></li>
+                <li class="hideOnMobile"><a href="boka.html">Boka</a></li>
+                <li class="hideOnMobile"><a href="hitta.html">Hitta</a></li>
+                <li class="hideOnMobile"><a href="kontakta.html">Kontakta</a></li>
+                <li onclick=showhamburger()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#f9f9f9"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <div class="layout">
+        <aside class="sidebar">
+            <h3 class="aside-heading"><i>Stickningsträff med vin/öl och föreläsning</i></h3>
+            <h3><i>Var?</i></h3>
+            <p>Bar Stor, vån. 1</p>
+            <h3><i>När?</i></h3>
+            <p>Mån-tis 20:00</p>
+            <p>Ons-tors 19.30</p>
+            <p>Fre-sön 18:00</p>
+        </aside>
+
+        <main class="content">
+            <h2 class="sub-heading-2">Kontakta oss vid frågor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet nunc a ligula laoreet faucibus dignissim at lorem. Vivamus sodales orci ut bibendum ultricies. Suspendisse pretium vehicula semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur placerat dapibus malesuada. Duis malesuada, dui sed vehicula maximus,</p>
+             <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Kontaktuppgifter</legend>
+                <label for="firstname">Förnamn:</label>
+                <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="50"><br><br>
+                <label for="lastname">Efternamn:</label>
+                <input type="text" id="lastname" name="lastname" required minlength="2" maxlength="50"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Stickning och virkning</legend>
+                <label for="experience">Handarbete</label><br>
+                <select id="experience" name="experience" required>
+                    <option value="">Välj ett alternativ</option>
+                    <option value="Stickning">Stickning</option>
+                    <option value="Virkning">Virkning</option>
+                    <option value="Båda">Båda</option>
+                    <option value="Ingetdera">Ingetdera</option>
+                </select><br><br>
+                <label for="experience_nyb">Erfarenhet</label><br>
+                <input type="radio" id="experience_nyb" name="experience" value="Nybörjare">
+                <label for="experience_nyb">Nybörjare</label>
+                <input type="radio" id="experience_med" name="experience" value="Medel">
+                <label for="experience_med">Medel</label>
+                <input type="radio" id="experience_adv" name="experience" value="Avancerad">
+                <label for="experience_adv">Avancerad</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Frågor och kommentarer</legend>
+                <label for="comments">Fråga/kommentar</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Lämna en kommentar" required></textarea><br><br>
+                <div class="checkbox">   
+                <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Jag godkänner att mina uppgifter behandlas enligt dataskyddsförordningen (GDPR)</label><br><br></div>
+                <input type="submit" value="Skicka">
+                </fieldset>
+            </form>
+        </main>
+        </div>
+        <footer>
+            <p>Hotel Knit Retreat | Stickningsgatan 3 | 012-23 47 56</p>
+        </footer>
+    
+    </body>
+</html>
